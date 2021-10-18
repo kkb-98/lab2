@@ -11,7 +11,7 @@ $(LIBS) : $(OBJS)
 all: add
 
 add: $(OBJS)
-	$(CC) $(CFLAGS) -o add $(OBJS) $(LIBS)
+	$(CC) $(CFLAGS) -g -o add $(OBJS) $(LIBS)
 
 clean:
 	rm -f $(OBJS) add core
